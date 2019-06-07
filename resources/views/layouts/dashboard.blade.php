@@ -40,7 +40,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="/profile" class="img-circle" alt="User Image">
+                <img src="/storage/avatars/{{ $user->avatar }}" class="img-circle" alt="User Image">
 
                 <p>
                     {{ Auth::user()->name }}
