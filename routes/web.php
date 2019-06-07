@@ -24,3 +24,5 @@ Route::get('dashboard', function () {
 });
 
 Route::get('profile', 'UserController@profile');
+
+Route::post('profile', 'UserController@update_avatar');
