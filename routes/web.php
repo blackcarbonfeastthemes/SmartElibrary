@@ -19,8 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('dashboard', function () {
-    return view('dashboard');
+Route::get('Category', function () {
+    return view('Category');
 });
 
 Route::get('profile', 'UserController@profile');

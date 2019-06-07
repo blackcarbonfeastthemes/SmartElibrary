@@ -40,7 +40,7 @@
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="/storage/avatars/{{ $user->avatar }}" class="img-circle" alt="User Image">
+                <img src="#" class="img-circle" alt="User Image">
 
                 <p>
                     {{ Auth::user()->name }}
@@ -105,7 +105,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+            <li class="active"><a href="home"><i class="fa fa-circle-o"></i> Dashboard</a></li>
 
           </ul>
         </li>
@@ -119,7 +119,7 @@
           <ul class="treeview-menu">
             <li><a href="#"><i class="fa fa-circle-o"></i> Member</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Books</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Category</a></li>
+            <li><a href="Category"><i class="fa fa-circle-o"></i> Category</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Voice</a></li>
           </ul>
 
@@ -152,7 +152,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
     </div>
-    <strong>Copyright &copy; 2019 <a href="#">Smart E Libuary</a>.</strong> All rights
+    <strong>Copyright &copy; 2019 <a href="#">Smart E Library</a>.</strong> All rights
     reserved.
   </footer>
 
