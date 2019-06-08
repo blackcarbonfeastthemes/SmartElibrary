@@ -19,9 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('Category', function () {
-    return view('Category');
-});
+Route::resource('Category','CategoryController');
 
 Route::get('profile', 'UserController@profile');
 

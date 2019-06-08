@@ -119,7 +119,7 @@
           <ul class="treeview-menu">
             <li><a href="#"><i class="fa fa-circle-o"></i> Member</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Books</a></li>
-            <li><a href="Category"><i class="fa fa-circle-o"></i> Category</a></li>
+            <li><a href="{{url('Category')}}"><i class="fa fa-circle-o"></i> Category</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i> Voice</a></li>
           </ul>
 
