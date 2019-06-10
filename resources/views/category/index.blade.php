@@ -50,7 +50,7 @@
 
 <br>
 <br>
-<table class="table table-responsive">
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -64,7 +64,7 @@
     <tr>
       <td>{{$cat->title}}</td>
       <td>{{$cat->description}}</td>
-      <td>Edit / Delete </td>
+      <td> Edit / Delete </td>
     </tr>
     @endforeach
   </tbody>
