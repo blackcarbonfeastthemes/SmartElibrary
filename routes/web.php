@@ -20,6 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('Category','CategoryController');
+Route::get('CategoryController','Category@create');
+Route::Post('CategoryController','Category@store');
+
+
+
 
 Route::get('profile', 'UserController@profile');
 

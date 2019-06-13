@@ -8,6 +8,9 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
+<!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -117,12 +120,34 @@
           </a>
 
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Member</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Books</a></li>
+
+            <li><a href="{{url('Books')}}"><i class="fa fa-circle-o"></i> Books</a></li>
             <li><a href="{{url('Category')}}"><i class="fa fa-circle-o"></i> Category</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Voice</a></li>
+
           </ul>
 
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Admin</span>
+
+            </a>
+
+            <ul class="treeview-menu">
+              <li><a href="{{url('Member')}}"><i class="fa fa-circle-o"></i> Member</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i> Voice</a></li>
+            </ul>
+
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>Extra</span>
+
+              </a>
+
+              <ul class="treeview-menu">
+                <li><a href="{{url('Voice')}}"><i class="fa fa-circle-o"></i> Voice</a></li>
+              </ul>
     </section>
     <!-- /.sidebar -->
   </aside>

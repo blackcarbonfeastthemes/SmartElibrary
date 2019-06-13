@@ -18,12 +18,12 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Add Category</h4>
+        <h4 class="modal-title" id="myModelLabel">Add Category</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal body -->
-      <form  action="{{route('Category.store')}}" method="post">
+      <form action="/CategoryController" method="post" enctype="multipart/form-data">
       {{csrf_field()}}
       </form>
       <div class="modal-body">
@@ -34,14 +34,14 @@
         <div class="form-group">
           <label for="des">Description</label>
           <textarea name="Description" id="des" rows="5" cols="20" class="form-control"></textarea>
-
         </div>
       </div>
 
       <!-- Modal footer -->
       <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      @csrf
+      <button type="submit" class="btn btn-primary" >Save</button>
+      <button  type="button"class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
 
     </div>
@@ -51,6 +51,7 @@
 <br>
 <br>
 <table class="table">
+    {{csrf_field()}}
   <thead>
     <tr>
       <th>Name</th>
